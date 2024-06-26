@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.cart{
+    display: none;
+    position: fixed;
+    margin-top: 5px;
+    top: 0;
+    right: 0;
+    min-height: 80%;
+    width: 380px;
+    border: 2px solid #73f0cd;
+    z-index: 4;
+    background-color: #fff;
+    border-radius: 10px;
+    transform: translateY(10%);
+}
+
+.cart h2{
+    margin: 20px;
+    text-align: center;
+    color: #000000;
+    font-weight: 500;
+    font-size: 30px;
+    font-family: 'Kanit', sans-serif;
+}
+.cart ul{
+    margin: 0 10px;
+}
+.cart ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    border: none;
+}
+.cart .remove-from-cart{
+    width: 35px;
+    height: 35px;
+    border: 1px solid #b69ffc;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.cart #close {
+    margin-top: 5px;
+    border: none;
+    border-radius: 50%;
+}
+
+.cart #close i{
+    color: #fff;
+    font-size: 30px;
+    background-color: #8ea7de;
+    border-radius: 50%;
+}
+.cart #total{
+    width: 100%;
+    height: 36px;
+    background-color: #caefbd;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.cart .info-cart{
+    color: #000000;
+    font-size: 14px;
+    font-family: 'Coiny', cursive;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 300px;
+}
+.ThanhToan{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.cart #ThanhToan{
+    width: 50%;
+    height: 36px;
+    font-family: Coiny, cursive;
+    font-weight: 500;
+    background-color: #fdfbff;
+    color: #000000;
+    font-size: 18px;
+    border: 1px solid #ba8ede;
+    text-align: center;
+    border-radius: 10px;
+}
+.cart .function-close{
+    text-align: center;
+}

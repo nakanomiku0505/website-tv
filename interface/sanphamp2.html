@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản phẩm TV || Trang 2</title>
+    <link rel="stylesheet" href="../css/sp2.css">
+    <script src="https://kit.fontawesome.com/0d62f8b5a7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/cart.css">
+    <link rel="shortcut icon" href="../image/logo.ico">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../image/logo.png" alt="">
+        </div>
+        <div class="menu-left">
+            <li><a href="../interface/home.html">Trang chủ</a> </li>
+            <li><a href="../interface/sanpham.html">Sản phẩm</a>
+                <ul class="dr-menu">
+                    <li><a href="">Theo kích thước</a>
+                        <ul>
+                            <li><a href=""><i class="fa-solid fa-caret-right"></i>TV 32-50 inch</a></li>
+                            <li><a href=""><i class="fa-solid fa-caret-right"></i>TV 50-58 inch</a></li>
+                            <li><a href=""><i class="fa-solid fa-caret-right"></i>TV 58-65 inch</a></li>
+                            <li><a href=""><i class="fa-solid fa-caret-right"></i>TV 65-75 inch</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Theo độ phân giải</a>
+                        <ul>
+                            <li><a href=""><i class="fa-solid fa-caret-right"></i>Tivi LED</a></li>
+                            <li><a href=""><i class="fa-solid fa-caret-right"></i>Tivi QLED</a></li>
+                            <li><a href=""><i class="fa-solid fa-caret-right"></i>Tivi QLED 4K</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../interface/phukien.html">Phụ kiện TV</a></li>
+                </ul>
+            </li>
+            <li><a href="../interface/services.html">Dịch vụ</a>
+                <ul class="dr-menu">
+                    <li><a href="">Sửa màn hình</a></li>
+                    <li><a href="">Sửa main TV</a></li>
+                </ul>
+            </li>
+            <li><a href="">Thương hiệu</a></li>
+            <li><a href="">Về chúng tôi</a></li>
+        </div>
+        <div class="menu-right">
+            <li>
+                <input id="search" type="text" name="" id="" placeholder="TÌM KIẾM SẢN PHẨM">
+                <a href="" id="btsr"><img src="../image/search.png" alt=""></a>
+            </li>
+            <li><a href=""><img src="../image/sp.png" alt=""></a>
+                <ul class="sp">
+                    <li>Trợ giúp</li>
+                    <li><a href=""><i class="fa-solid fa-phone-volume"></i>Hotline</a></li>
+                    <li><a href="fb.com/nakano.miku.55"><i class="fa-brands fa-facebook-messenger"></i>Messenger</a>
+                    </li>
+                    <li><a href="mailto://satonakata2810@gmail.com"><i class="fa-solid fa-square-envelope"></i>Email</a>
+                    </li>
+                    <li><a href=""><i class="fa-solid fa-truck"></i>Tra cứu đơn hàng</a></li>
+                </ul>
+            </li>
+            <li><a href=""><img src="../image/user.png" alt=""></a>
+                <ul class="user">
+                    <li>Người dùng</li>
+                    <li><a href="../interface/login.html"><i class="fa-solid fa-right-to-bracket"></i>Đăng nhập</a></li>
+                    <li><a href=""><i class="fa-solid fa-address-card"></i>Đăng ký</a></li>
+                </ul>
+            </li>
+            <li class="buy"><a><img src="../image/buy.png" alt="" onclick="Cart()"></a>
+                <div class="cart" id="cart">
+                    <div class="function-close">
+                        <button id="close" onclick="dongform()"><i class="fa-regular fa-circle-xmark"></i></button>
+                    </div>
+                    <h2>Giỏ Hàng</h2>
+                    <ul id="cart-items">
+
+                    </ul>
+                    <p id="total">Tổng tiền: 0₫</p>
+                    <div class="ThanhToan">
+                        <button id="ThanhToan" onclick="ThanhToan()">Thanh Toán</button>
+                    </div>
+                </div>
+            </li>
+        </div>
+
+    </header>
+    <section class="slide">
+        <div class="aspect-ratio-169">
+            <img src="../image/1.png" alt="" class="active">
+            <img src="../image/2.png" alt="">
+            <img src="../image/3.png" alt="">
+            <img src="../image/4.png" alt="">
+            <img src="../image/5.png" alt="">
+            <img src="../image/6.png" alt="">
+            <div class="arrow">
+                <button class="prev"><i class="fa fa-chevron-left"></i></button>
+                <button class="next"><i class="fa fa-chevron-right"></i></button>
+            </div>
+        </div>
+        <main>
+            <div class="top">
+                <div class="top-row">
+                    <a href="../interface/home.html">Trang chủ</a><span>Danh mục sản phẩm</span>
+                </div>
+            </div>
+            <div class="container">
+                <div class="sidebar">
+                    <div class="sidebar-item">
+                        <h3>Danh mục</h3>
+                        <div class="line"></div>
+                        <ul>
+                            <li><a href="">Thương hiệu</a>
+                                <ul>
+                                    <li><a href=""><i class="fa-solid fa-caret-right"></i>Samsung</a></li>
+                                    <li><a href=""><i class="fa-solid fa-caret-right"></i>LG</a></li>
+                                    <li><a href=""><i class="fa-solid fa-caret-right"></i>Xiaomi</a></li>
+                                    <li><a href=""><i class="fa-solid fa-caret-right"></i>Sony</a></li>
+                                    <li><a href=""><i class="fa-solid fa-caret-right"></i>Google</a></li>
+                                    <li><a href=""><i class="fa-solid fa-caret-right"></i>TCL</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Kích thước</a>
+                                <ul>
+                                    <li><a href=""><i class="fa-solid fa-caret-right"></i>32-50 inch</a></li>
+                                    <li><a href=""><i class="fa-solid fa-caret-right"></i>50-58 inch</a></li>
+                                    <li><a href=""><i class="fa-solid fa-caret-right"></i>58-65 inch</a></li>
+                                    <li><a href=""><i class="fa-solid fa-caret-right"></i>65-75 inch</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Loại màn hình</a>
+                                <ul>
+                                    <li><a href=""><i class="fa-solid fa-caret-right"></i>LED</a></li>
+                                    <li><a href=""><i class="fa-solid fa-caret-right"></i>QLED</a></li>
+                                    <li><a href=""><i class="fa-solid fa-caret-right"></i>QLED 4K</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Phụ kiện</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="title">
+                        <h3>Sản phẩm</h3>
+                    </div>
+                    <span>Sắp Xếp:</span>
+                    <select name="select-box" id="select-box">
+                        <option value="Sắp Xếp Theo Độ Phổ Biến">Sắp Xếp Theo Độ Phổ Biến</option>
+                        <option value="Sắp Xếp Theo Điểm Rating">Sắp Xếp Theo Điểm Rating</option>
+                        <option value="Sắp Xếp Theo Sản Phẩm Mới">Sắp Xếp Theo Sản Phẩm Mới</option>
+                        <option value="Sắp Xếp Giá Từ: Thấp Đến Cao">Sắp Xếp Giá Từ: Thấp Đến Cao</option>
+                        <option value="Sắp Xếp Giá Từ: Cao Đến Thấp">Sắp Xếp Giá Từ: Cao Đến Thấp</option>
+                    </select>
+                    <div class="list-item">
+                        <div class="item">
+                            <a href=""><img
+                                    src="https://cdn.tgdd.vn/Products/Images/1942/281936/Slider/vi-vn-google-tcl-4k-55-inch-55p635-1.jpg"
+                                    alt=""></a>
+                            <div class="des">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <p><a href="">Google Tivi TCL 4K 55 inch 55P635</a></p>
+                                <button>4K</button>
+                                <button>55 inch</button>
+                                <p>Giá: 20.000.000 đ</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href=""><img
+                                    src="https://cdn.tgdd.vn/Products/Images/1942/310792/android-tivi-aqua-4k-55-inch-aqt55d67ug-00.jpg"
+                                    alt=""></a>
+                            <div class="des">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <p><a href="">Android Tivi AQUA 4K 55 inch AQT55D67UG</a></p>
+                                <button>4K</button>
+                                <button>55 inch</button>
+                                <p>Giá: 17.990.000 đ</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href=""><img
+                                    src="https://cdn.tgdd.vn/Products/Images/1942/303221/Slider/vi-vn-smart-tivi-qled-4k-85-inch-samsung-qa85q70c-14-1020x570.jpg"
+                                    alt=""></a>
+                            <div class="des">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <p><a href="">Smart Tivi QLED 4K 65 inch Samsung QA65Q70C
+                                    </a></p>
+                                <button>4K</button>
+                                <button>65 inch</button>
+                                <p>Giá: 17.990.000 đ</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href=""><img
+                                    src="https://cdn.tgdd.vn/Products/Images/1942/308369/Slider/vi-vn-google-tivi-sony-4k-50-inch-kd-50x77l-01.jpg"
+                                    alt=""></a>
+                            <div class="des">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <p><a href="">Google Tivi Sony 4K 50 inch KD-50X77L</a></p>
+                                <button>4K</button>
+                                <button>50 inch</button>
+                                <p>Giá: 10.990.000 đ</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href=""><img
+                                    src="https://cdn.tgdd.vn/Products/Images/1942/312858/Slider/google-tivi-xiaomi-32-inch-l32m8-p2sea638309878831230326.jpg"
+                                    alt=""></a>
+                            <div class="des">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <p><a href="">Google Tivi Xiaomi A 32 inch L32M8-P2SEA</a></p>
+                                <button>HD</button>
+                                <button>32 inch</button>
+                                <p>Giá: 3.990.000 đ</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href=""><img
+                                    src="https://cdn.mediamart.vn/images/product/neo-qled-tivi-4k-samsung-65-inch-65qn85c-smart-tv_c11241af.jpg"
+                                    alt=""></a>
+                            <div class="des">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <p><a href="">NEO QLED Tivi 4K Samsung 65 inch 65QN85C Smart TV</a></p>
+                                <button>4K</button>
+                                <button>65 inch</button>
+                                <p>Giá: 28.490.000 đ</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href=""><img
+                                    src="https://cdn.mediamart.vn/images/product/smart-tivi-lg-4k-55-inch-55uq7550psf-thinq-ai_4954c364.jpg"
+                                    alt=""></a>
+                            <div class="des">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <p><a href="">Smart Tivi LG 4K 55 inch 55UQ7550PSF ThinQ AI
+                                    </a></p>
+                                <button>4K</button>
+                                <button>55 inch</button>
+                                <p>Giá: 9.499.000 đ</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href=""><img
+                                    src="https://cdn.mediamart.vn/images/product/smart-tivi-xiaomi-4k-p1-55-inch-android-tv-10_1dcbdba8.png"
+                                    alt=""></a>
+                            <div class="des">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <p><a href="">Smart Tivi Xiaomi 4K P1 55 inch Android TV 10</a></p>
+                                <button>4K</button>
+                                <button>55 inch</button>
+                                <p>Giá: 8.690.000 đ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page">
+                        <ul class="pg-list">
+                            <li><a href="../interface/sanpham.html">Trang trước</a></li>
+                            <li><a href="../interface/sanpham.html">1</a></li>
+                            <li><a href="" class="active">2</a></li>
+                            <li><a href="">3</a></li>
+                            <li><a href="">4</a></li>
+                            <li><a href="">5</a></li>
+                            <li><a href="">...</a></li>
+                            <li><a href="">Trang sau</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </section>
+    <!-- -----------------Footer--------------------- -->
+    <footer>
+        <div id="footer">
+            <div class="box">
+                <div class="logo">
+                    <img src="../image/logo.png" alt="">
+                </div>
+                <p>Cung cấp sản phẩm với chất lượng tuyệt vời cho quý khách</p>
+            </div>
+            <div class="box">
+                <h3>NỘI DUNG</h3>
+                <ul class="quick-menu">
+                    <div class="item">
+                        <a href="">Trang chủ</a>
+                    </div>
+                    <div class="item">
+                        <a href="">Sản phẩm</a>
+                    </div>
+                    <div class="item">
+                        <a href="">Dịch vụ</a>
+                    </div>
+                    <div class="item">
+                        <a href="">Liên hệ</a>
+                    </div>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>LIÊN HỆ</h3>
+                <form action="">
+                    <input type="text" placeholder="Địa chỉ email">
+                    <button>Nhận tin</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="../js/home.js"></script>
+<script src="../js/cart.js"></script>
+
+</html>

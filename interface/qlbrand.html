@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QL Thương hiệu</title>
+    <script src="https://kit.fontawesome.com/0d62f8b5a7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/ql.css">
+    <link rel="shortcut icon" href="../image/logo.ico">
+</head>
+
+<body>
+    <header>
+        <div class="hd-top">
+            <img src="../image/logo.png" alt="" width="80%">
+            <p id="id-user"></p>
+        </div>
+        <div class="hd-func">
+            <ul>
+                <li><a href="../interface/qltv.html">Danh sách TV</a></li>
+                <li><a href="../interface/qlbrand.html">Danh sách thương hiệu</a></li>
+                <li><a href="../interface/qlphukien.html">Danh sách phụ kiện</a></li>
+                <li><a href="../interface/qldichvu.html">Danh sách dịch vụ</a></li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <div class="sc-top">
+            <ul>
+                <li><i class="fa-brands fa-facebook"></i><a href="https://www.facebook.com/nakano.miku.55">Facebook</a>
+                </li>
+                <li><i class="fa-solid fa-building-columns"></i>MB: 964529999</li>
+                <li><i class="fa-solid fa-right-from-bracket"></i><a href="../interface/login.html">Logout</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="fc-search">
+                <input id="search" type="text" name="" id="" placeholder="TÌM KIẾM SẢN PHẨM">
+                <a href="" class="btsr"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+            <div class="m-fc">
+                <div class="data">
+                    <div class="title">
+                        <span>Danh sách TV</span>
+                    </div>
+                    <table id="tb-data">
+                        <thead>
+                            <tr>
+                                <th>STT</th>
+                                <th>Tên</th>
+                                <th>Ảnh</th>
+                                <th colspan="2">Tác vụ</th>
+                            </tr>
+                        </thead>
+
+                        <body>
+                            <tr>
+                                <td>1</td>
+                                <td>LG</td>
+                                <td><img src="../image/brand1.jpg" width="150px" alt=""></td>
+                                <td>
+                                    <div class="action-container">
+                                        <button type="button" onclick="Update(this)"><i
+                                                class="fa-regular fa-pen-to-square"></i></button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="action-container">
+                                        <button type="button" onclick="Delete(this)"><i
+                                                class="fa-solid fa-trash-can"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                    </table>
+                </div>
+                <div class="edit">
+                    <span>Thêm dữ liệu</span>
+                    <form action="">
+                        <ul>
+                            <li>
+                                <label for="STT">STT</label>
+                                <input type="text" id="STT" placeholder="Nhập STT" required>
+                            </li>
+                            <li>
+                                <label for="Ten">Tên</label>
+                                <input type="text" id="Ten" placeholder="Nhập tên " maxlength="50" required>
+                            </li>
+                            <li>
+                                <label for="IMG">Ảnh</label>
+                                <input type="file" id="IMG">
+                            </li>
+                        </ul>
+                        <button type="submit" onclick="add()"><i class="fa-solid fa-plus"></i></button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
